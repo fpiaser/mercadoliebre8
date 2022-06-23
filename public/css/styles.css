@@ -1,0 +1,271 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.top-header{
+    padding: 2%;
+    display: flex;
+    flex-wrap:wrap;
+    align-content:flex-start;
+    align-items: center;
+}
+
+header{
+    background-color: #EAC926;
+    
+}
+
+header div.logo{
+    width: 20%;
+    padding: 10px;
+}
+
+header .form {
+    display: flex;
+    padding: 2px;
+    font-size: 11px;
+    width: 50%;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+    display: none;
+}
+
+header ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.nav1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .form {
+    justify-content: right;
+}
+
+header .form .input{
+    background-color: #FFF;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form .submit{
+    background-color: #FFF;
+    
+    color: #666;
+    text-align: center;
+    padding: 2px;
+    width: 5%;
+}
+
+header div.top-header{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+.login {
+    margin: 80px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.register {
+    margin: 80px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+footer{
+    text-align: center;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 2em;
+    color: #0044AA;
+    margin: 10px;
+    padding-top: 30px;
+}
+.titulo {
+    font-size: 16px;
+    color: black;
+    margin: 0%;
+
+}
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+    header nav {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        margin-left: 10px;
+    }
+    .burger-menu {
+        display: none;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+}
